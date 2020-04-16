@@ -1,0 +1,170 @@
+/* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+
+::-webkit-scrollbar
+{
+    display: none;
+}
+.map {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border: 10px double white;
+    border-radius: 50%;
+    opacity: 0;
+    /*border:10px double black;*/
+}
+#staticMapContainer, #staticMap
+{
+    width: 100%;
+    height: 100%;
+}
+.ui-root
+{
+    position: absolute;
+    border-radius: 50%;
+    border: 10px double white;
+}
+
+.popcircle
+{
+    position: relative;
+    width: 120%;
+    height: 120%;
+}
+
+.popcircle ul
+{
+    list-style:none;
+    padding:0px;
+    margin: 0px;
+    height: auto;
+    cursor: pointer;
+}
+
+.popcircle ul li{ height: 17%; width: 17%; position: absolute;}
+
+.popcircle ul li img { height: 100%; width: 100%;}
+
+
+.uiButton
+{
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    z-index: 3;
+}
+
+.box
+{
+    float : left;
+    width: 100%;
+    height: 100%;
+}
+
+.trigger
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.uiOverlay
+{
+    overflow: hidden;
+    position: absolute;
+    /*background: url("../res/images/UI-bg.jpg");*/
+    /*background-color: #5f9ea0;*/
+    /*background: linear-gradient(#5f9ea0, #5f9ebf);*/
+    background: #1f3b52;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    border-radius: 50%;
+}
+.uiOverlayData
+{
+    width: 70%;
+    height: 70%;
+    overflow: scroll;
+    font-size: small;
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    color: white;
+    transform: translate(-45%, -50%)
+}
+
+.uiTitle
+{
+    text-align: center;
+}
+
+.uiText
+{
+    font-size: larger;
+    line-height: 2;
+    text-align: justify;
+}
+
+.uiOverlayImg, .model-container, .panorama-container
+{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin: 0;
+    border-radius: inherit;
+}
+.yt-cont
+{
+    margin:0 auto;
+    padding:0;
+    display:inline-block;
+    overflow:auto;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.img-counter
+{
+    font-size: 20px;
+    position: absolute;
+    padding: 5px;
+    color: white;
+    z-index: 10000000000;
+    background: #1f3b52;
+    border-radius: 30%;
+}
+
+iframe
+{
+    width: 100%;
+    height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.playIcon
+{
+    position: relative;
+    left: 43%;
+    top: -57%;
+    pointer-events: none;
+}
+
+/*.iv-snap-view
+{
+    visibility: hidden !important;
+}*/
